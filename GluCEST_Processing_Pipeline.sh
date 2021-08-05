@@ -115,15 +115,10 @@ fslmaths $cest/$case/$case-CEST-b0b1thresh.nii.gz -mul $cest/$case/$case-CEST-ma
 #######################################################################################################
 #clean up and organize, whistle while you work
 mv -f $cest/$case/*masktmp* $log_files
-#rm -f $cest/$case/*masktmp*
 mv -f $cest/$case/*.log $log_files
-#rm -f $cest/$case/*log*
 mv -f $cest/$case/$case-B0MAP-pos.nii.gz $log_files/$case-b0MAP-pos.nii.gz
-#rm -f $cest/$case/$case-B0MAP-pos.nii.gz
 mv -f $cest/$case/$case-B0MAP-thresh.nii.gz $log_files/$case-B0MAP-thresh.nii.gz
-#rm -f $cest/$case/$case-B0MAP-thresh.nii.gz
 mv -f $cest/$case/$case-B1MAP-thresh.nii.gz $log_files/$case-B1MAP-thresh.nii.gz
-#rm -f $cest/$case/$case-B1MAP-thresh.nii.gz
 
 mkdir $cest/$case/orig_data
 mv $cest/$case/$case-B0MAP.nii $cest/$case/$case-B1MAP.nii $cest/$case/$case-B0B1CESTMAP.nii $cest/$case/orig_data
